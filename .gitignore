@@ -1,3 +1,7 @@
+# VS 
+.vs/
+x64/
+
 # Prerequisites
 *.d
 
