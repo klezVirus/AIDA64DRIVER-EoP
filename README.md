@@ -21,3 +21,9 @@ All versions <= 7.00.6742 are vulnerable.
 ## Root Cause
 
 Permissions to the Driver handle are enforced on user-mode instead of using the Driver Load.
+
+## Disclaimer
+
+The technique used to search for the EPROCESS structure, a sequential kernel memory search in a predefined area of memory (replica from a previous work by [h0mbre](https://twitter.com/h0mbre_)), causes a BSOD if an when it lands on swapped memory. As I don't have any use-case for this vulnerability, I didn't spend any time to stabilize it.
+
+More info on the vulnerability [here](https://belong2yourself.github.io/vulnerabilities/docs/AIDA/Elevation-of-Privileges/readme/).
